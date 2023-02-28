@@ -1,7 +1,3 @@
-const { exportAllDeclaration } = require('@babel/types')
-const { it } = require('node:test')
-const { getMaxListeners } = require('process')
-const { describe } = require('yargs')
 const Employee = require('../lib/Employee')
 
 describe('Employee class test', () => {
