@@ -3,7 +3,7 @@ const Manager = require('../lib/Manager')
 describe('Manager class test', () => {
     describe('init', () => {
         it('test constructor properties', ()=> {
-            let manObj = new Manager('John', 'jdalfaro4@getMaxListeners.com', 1, 100);
+            let manObj = new Manager('John', 'jdalfaro4@gmail.com', 1, 100);
 
             expect(manObj.name).toEqual('John')
             expect(manObj.email).toEqual('jdalfaro4@gmail.com');
@@ -15,8 +15,8 @@ describe('Manager class test', () => {
     })
 
     describe('test get office number function', () => {
-        let manObj = new Manager("max", "max12@ymail.com", 2, 100);
+        let manObj = new Manager("max", "max12@ymail.com", 2, 101);
 
-        expect(manObj.getOfficeNumber()).toEqual(100)
+        expect(manObj.getOfficeNumber()).toEqual(101)
     })
 })

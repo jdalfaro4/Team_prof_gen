@@ -3,7 +3,7 @@ const Engineer = require('../lib/Engineer')
 describe('Engineer class test', () => {
     describe('init', () => {
         it('test constructor properties', ()=> {
-            let engObj = new Engineer('John', 'jdalfaro4@getMaxListeners.com', 1 'jdalfaro4');
+            let engObj = new Engineer('John', 'jdalfaro4@gmail.com', 1, 'jdalfaro4');
 
             expect(engObj.name).toEqual('John')
             expect(engObj.email).toEqual('jdalfaro4@gmail.com');

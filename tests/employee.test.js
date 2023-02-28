@@ -3,7 +3,7 @@ const Employee = require('../lib/Employee')
 describe('Employee class test', () => {
     describe('init', () => {
         it('test constructor properties', ()=> {
-            let empObj = new Employee('John', 'jdalfaro4@getMaxListeners.com', 1);
+            let empObj = new Employee('John', 'jdalfaro4@gmail.com', 1);
 
             expect(empObj.name).toEqual('John')
             expect(empObj.email).toEqual('jdalfaro4@gmail.com');
