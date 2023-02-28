@@ -1,20 +1,22 @@
-const { it } = require("node:test");
-const { describe } = require("yargs");
+const Manager = require('../lib/Manager')
 
+describe('Manager class test', () => {
+    describe('init', () => {
+        it('test constructor properties', ()=> {
+            let manObj = new Manager('John', 'jdalfaro4@getMaxListeners.com', 1, 100);
 
-//THIS IS AN EXAMPLE***
+            expect(manObj.name).toEqual('John')
+            expect(manObj.email).toEqual('jdalfaro4@gmail.com');
+            expect(manObj.id).toEqual(1);
+            expect(manObj.role).toEqual('Manager');
+            expect(manObj.officenumber).toEqual(100);
 
-function assertikon() {
-    expect (2 + 2).Equal(4);
-}
+        })
+    })
 
-function individualTest() {
-    it('should return accurate sums', assertikon);
-}
+    describe('test get office number function', () => {
+        let manObj = new Manager("max", "max12@ymail.com", 2, 100);
 
-
-function myTests() {
-    describe('This is my chapter', individualTest)
-}
-
-describe('This is my testing library', myTests);
+        expect(manObj.getOfficeNumber()).toEqual(100)
+    })
+})
