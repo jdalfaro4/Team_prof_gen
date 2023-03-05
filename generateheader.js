@@ -7,9 +7,12 @@ const Header = function() {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Team Professional Generator</title>
-    <link rel="stylesheet" href="./dist/style/style.css" />
+    <link rel="stylesheet" href="/W10-challenge/Team_prof_gen/dist/style/style.css" />
   </head>
   <body>
+    <nav>
+      <h1>My Team</h1>
+    </nav>
     `
 }
 

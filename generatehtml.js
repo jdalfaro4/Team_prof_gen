@@ -27,7 +27,7 @@ let generateHTML = function(data) {
 
 function generateEngineerHtml(engineer){
     return `
-    <div class="Engineer">
+    <div id="Engineer">
     <p> Engineer Name - ${engineer.getName()} </p>
     <p> Engineer Email - ${engineer.getEmail()} </p>
     <p> Engineer Id - ${engineer.getId()} </p>
@@ -39,7 +39,7 @@ function generateEngineerHtml(engineer){
 
 function generateManagerHtml(manager){
     return `
-    <div class="Manager">
+    <div id="Manager">
     <p> Manager Name - ${manager.getName()} </p>
     <p> Manager Email - ${manager.getEmail()} </p>
     <p> Manager Id - ${manager.getId()} </p>
@@ -50,7 +50,7 @@ function generateManagerHtml(manager){
 
 function generateInterHtml(intern){
     return `
-    <div class="Intern">
+    <div id="Intern">
     <p> Intern Name - ${intern.getName()} </p>
     <p> Intern Email - ${intern.getEmail()} </p>
     <p> Intern Id - ${intern.getId()} </p>
