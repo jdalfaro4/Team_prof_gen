@@ -13,6 +13,7 @@ const Header = function() {
     <nav>
       <h1>My Team</h1>
     </nav>
+    <div id="flex-container"
     `
 }
 

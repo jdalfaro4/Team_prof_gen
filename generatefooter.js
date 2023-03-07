@@ -1,5 +1,6 @@
 const Footer = function() {
     return`
+    </div>
     </body>
     </html>
     
